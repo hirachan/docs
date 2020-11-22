@@ -145,3 +145,8 @@ DNSのキャッシュポイズニング等でMTA-STSのレコード自体を無�
 すでに、メール受信サーバーがTLS1.2に対応しているのであれば、ぜひ、Webサーバーを立ててMTA-STSのポリシーを宣言してみてください。
 
 MTA-STSに対応しているクライアントは当然TLS1.2以上に対応していますので、メールが届くなくなるということはありません。
+
+## 参考資料
+
+[RFC8461](https://tools.ietf.org/html/rfc8461)
+[送信ドメイン認証・暗号化 Deep Dive!](https://speakerdeck.com/hirachan/song-xin-domeinren-zheng-an-hao-hua-deep-dive) (自分の発表資料ですが・・・)
