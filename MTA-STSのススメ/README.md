@@ -6,7 +6,7 @@ MTA-STSとは、メールの配送経路上のメールサーバーとメール�
 
 具体的には、受信側が、送信サーバーに対して
 
-- STARTTLSを必ず使う
+- STARTTLSを必ず使う%
 - TLS1.2以上を必ず使う
 - 証明書が有効でなければ配送しない
 
@@ -14,10 +14,10 @@ MTA-STSとは、メールの配送経路上のメールサーバーとメール�
 
 STARTTLSだけでは、何が不足なのかということについては、後ほど説明します。
 
-例として、send.example.comからreceive.example.jpへのメールの配送を考えてみます。
+例として、sender.example.comからreceiver.example.jpへのメールの配送を考えてみます。
 
-まず、あらかじめ、receive.example.jpのメール管理者は、自分のところのreceive.example.jpにメールを送るときには、ちゃんと暗号化してね、とMTA-STSのポリシーでアピールしておきます。
-receive.example.jpのMTA-STSのポリシーを見たsend.example.comのメールサーバーには、receive.example.jpには暗号化して送る必要があることがわかるので、きちんと暗号化して送ります。また、暗号化できない場合には送りません。
+まず、あらかじめ、receiver.example.jpのメール管理者は、自分のところのreceiver.example.jpにメールを送るときには、ちゃんと暗号化してね、とMTA-STSのポリシーでアピールしておきます。
+receiver.example.jpのMTA-STSのポリシーを見たsender.example.comのメールサーバーには、receiver.example.jpには暗号化して送る必要があることがわかるので、きちんと暗号化して送ります。また、暗号化できない場合には送りません。
 
 ## 設定方法
 
